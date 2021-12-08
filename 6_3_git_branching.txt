@@ -1,0 +1,23 @@
+1. git checkout -b name_of_branch
+2. git uses a fast-forward merge when it can easily tell what order the commits came in. A recursive merge is used when commits did not happen in chronological order.
+3. git checkout name_of_branch
+4. git branch -d name_of_branch
+5. Merge conflicts happen when your branch is missing changes from the branch that you're trying to merge into. This most often occurs when multiple people are working on the same file and they have commited their changes after you made your branch.
+
+Part II
+
+git init
+echo blah > test.txt
+git add .
+git commit -m "created test.txt"
+
+git checkout -b new_branch
+echo blahblah > test.txt
+git add .
+git commit -m "modified test.txt"
+
+git checkout main
+git echo blahblahblah > test.txt
+git add .
+git commit -m "this should create a merge conflict"
+git merge new_branch
