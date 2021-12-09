@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Submit Events</title>
+  </head>
+  <body>
+    <form id="logoform">
+        <div><label">Your Brand Name:<input type="text" placeholder="your brand" name="brandName"></label></div>
+        <div><label">Your Brand Color:<input type="color" placeholder="your color" name="brandColor"></label></div>
+        <div><label>Logo Font Size:<input type="range" min="10" max="200" name="fontSize"></label><span id="fontSizeLabel"></span></div>
+        <div><button>Submit</button></div>
+    </form>
+    <section id="results"></section>
+    <script src="script.js"></script>
+  </body>
+</html>

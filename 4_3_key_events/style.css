@@ -1,0 +1,16 @@
+.bestFriend {
+  color: chartreuse;
+  font-weight: bold;
+}
+
+.dark body {
+  background-color: limegreen;
+}
+
+.dark a {
+  color: lightcoral;
+}
+
+.dark h1 {
+  color: lightslategray;
+}
